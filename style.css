@@ -1,0 +1,20 @@
+h6{
+    color:blue;
+}
+table,th,td{
+    border: 1px solid black;
+}
+/* Make us of . dot for class */ 
+.test{
+    color: red
+}
+/* this is how we make use of id */
+#test2{
+    color: greenyellow
+}
+/* div{
+    background-color: aqua;
+    width: 200px;
+    border: 15px solid green;
+    padding: 40px;
+} */
