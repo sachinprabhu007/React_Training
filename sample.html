@@ -165,6 +165,102 @@
          console.log(name.firstname)
          console.log(name.lastname)
          console.log(name.age)
+
+        let x = 5;
+        let y = 2;
+        let z = x + y;
+        console.log(z)
+
+        // logical operator
+        console.log(x>3 && y<10)
+
+        // OR
+        console.log(x>3 || y<10)
+
+        // Logical Not
+        console.log(!(x>3 || y<10))
+
+        console.log("Type of x= ", typeof x)
+        console.log("Type of y= ", typeof y)
+
+
+        // airthmetic operator
+        console.log("Addition", x+y)
+        console.log("Subtraction",x-y)
+        console.log("Division",x/y)
+        console.log("Mod",x%y)
+
+
+        const arr=["a","b","c"]
+        console.log(arr)
+        
+        const cities=["Goa","Bangalore","Delhi"]
+        console.log(cities)
+        cities.push("Mumbai")
+        console.log(cities)
+
+        // length of array
+        console.log("Length of cities array",cities.length)
+
+        // get last element of cities array
+        console.log(cities.slice(-1))
+
+
+        for (let i = 0; i < cities.length; i++) {
+            console.log(cities[i])
+        }
+
+        console.log("Cities using while loop")
+        let i=0
+        city =""
+        while (cities[i]) {
+        city += cities[i];
+        console.log(cities[i])
+        i++;
+        }
+
+        console.log("map function")
+        const numbers = [65, 44, 12, 4];
+        const newArr = numbers.map(myFunction)
+
+        function myFunction(num) {
+            return num * 10;
+        }
+         console.log(newArr)
+
+
+        for (let i = 0; i < cities.length; i++) {
+
+        if(cities[i]=="Delhi"){
+        break;
+        }else if(cities[i]=="Goa"){
+         continue;
+        }
+        console.log(cities[i]);
+        }
+
+        
+        //switch case
+        let a = 2;
+
+        switch (a) {
+
+            case 1:
+                a = 'one';
+                break;
+            case 2:
+                a = 'two';
+                break;
+            default:
+                a = 'not found';
+                break;
+        }
+        console.log(`The value is ${a}`);
+
+
+
+
+
     </script>
     <button type="button" onclick='document.getElementById("testid").innerHTML = "Welcome!!" '>  Login </button>
     <button type="button" onclick='document.getElementById("test2").style.fontSize = "40px" '>  Login </button>
@@ -173,4 +269,7 @@
     <button type="button" onclick='abc()'> Button for abc() Function </button>
     <button type="button" onclick='xyz()'> Button for abc() Function </button>
     </body>
+
+
+  
 </html>
