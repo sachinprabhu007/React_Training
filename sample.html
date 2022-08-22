@@ -37,6 +37,7 @@
 
         <p id="test2"> This is a test paragraph tag using id</p>
 
+        <button id="testid"> Button test id </button>
         <ul>
             <li> Unordered List 1</li>
             <li> Unordered List 2</li>
@@ -130,5 +131,46 @@
             <div class="col-md-6" style="background-color: blue" > World</div>
         </div>
 
+
+    <!-- Javascript  -->
+    <script>
+        // console.log("Hello World")
+        // // window.alert("This is an alert")
+        // document.write("This is document.write")
+        // // var a = 5
+        // let a = 5
+        // console.log(a)
+
+        // function abc(){
+        //     console.log("Hello this is a abc() function",a)
+        // }
+
+        // var b=8
+        // function xyz(){
+        //     //let b=8
+        //     let c=4
+           
+        //     console.log("Hello this is a xyz() function",b)
+        // }
+        // console.log(b)
+        // console.log(c) //throws error
+
+        const name ={
+            'firstname' : 'abc',
+            'lastname' : "xyz",
+            'age' : 22
+        }
+
+        // console.log( JSON.stringify(name))
+         console.log(name.firstname)
+         console.log(name.lastname)
+         console.log(name.age)
+    </script>
+    <button type="button" onclick='document.getElementById("testid").innerHTML = "Welcome!!" '>  Login </button>
+    <button type="button" onclick='document.getElementById("test2").style.fontSize = "40px" '>  Login </button>
+    <button type="button" onclick='document.write("Hello")'> Hello Button</button>
+    <button type="button" onclick='window.print()'> Print Button</button>
+    <button type="button" onclick='abc()'> Button for abc() Function </button>
+    <button type="button" onclick='xyz()'> Button for abc() Function </button>
     </body>
 </html>
